@@ -1,0 +1,30 @@
+{
+  "schema": "gemini-cloud-outsource-job-v1",
+  "job_id": "JOB-04",
+  "title_ko": "무저작권 파이썬 과학연산 기반 절차적 빗소리·바람·UI 조작음 48kHz 파형 합성",
+  "category": "procedural_audio_48khz",
+  "priority": 4,
+  "security_classification": "PUBLIC_CLEAN_ZERO_SECRET",
+  "target_repo": "icandoit122118-del/gemini-cloud-outsource-hub",
+  "workspace_rel_path": "jobs/JOB-04",
+  "target_import_rel_dir": "imported_audio/procedural_48khz_sfx",
+  "summary_ko": "외부 저작권 오염이 전혀 없는 순수 파이썬 수학·파형 합성을 통해 48,000Hz 16비트 무손실 절차적 빗소리·고원 바람 소리·전술 수색창 UI 조작음 파형 및 스펙트럼 검증 데이터를 생성한다.",
+  "deliverable_expectations_ko": [
+    "표준 48,000Hz 샘플레이트 및 16비트 PCM 파형 무결성 검증",
+    "빗소리(분홍 잡음+물방울 엔벨로프), 고원 바람(저주파 공명 스윕), UI 조작음(댐핑 사인파) 3종 완비",
+    "CC0-1.0 무저작권 선언 및 클리핑 0건(피크 진폭 <= 0.98) 검증"
+  ],
+  "required_gates": [
+    "RL-GCO-01",
+    "RL-GCO-02",
+    "RL-GCO-03",
+    "RL-GCO-04",
+    "RL-GCO-05",
+    "RL-GCO-06"
+  ],
+  "cloud_prompt_3lines_ko": [
+    "1. 클라우드 가상 컴퓨터 터미널에서 `git clone https://github.com/icandoit122118-del/gemini-cloud-outsource-hub.git work && cd work` 명령으로 공개 외주 우체통 저장소를 복제하세요.",
+    "2. `jobs/JOB-04/BRIEF_KO.md` 작업지시서를 읽고 `python scripts/run_cloud_job.py --job JOB-04` 및 `python -m unittest discover -s tests -p \"test_*.py\" -v`를 실행해 6대 보안·품질 게이트(RL-GCO-01..06) 6/6 통과를 자체 검증하세요.",
+    "3. 검증 완료된 납품 번들(`deliveries/JOB-04_delivery.zip` 및 `deliveries/JOB-04_delivery.json`)을 생성하고 터미널 출력 요약과 함께 납품해 주세요."
+  ]
+}

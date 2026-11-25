@@ -1,0 +1,30 @@
+{
+  "schema": "gemini-cloud-outsource-job-v1",
+  "job_id": "JOB-05",
+  "title_ko": "무봉제 1024x1024 전술 직물·스크래치·먼지·녹 마스크 절차적 합성",
+  "category": "procedural_seamless_masks_1024",
+  "priority": 5,
+  "security_classification": "PUBLIC_CLEAN_ZERO_SECRET",
+  "target_repo": "icandoit122118-del/gemini-cloud-outsource-hub",
+  "workspace_rel_path": "jobs/JOB-05",
+  "target_import_rel_dir": "imported_masks/tactical_seamless_1024",
+  "summary_ko": "언리얼 5.9 캐릭터 의상 및 무기 디테일 레이어에 즉시 연결할 수 있는 1024x1024 토로이달(Toroidal) 무봉제 코듀라 직물·금속 스크래치·고원 먼지·산화 녹 마스크 4종 수식 및 검증 리포트를 생성한다.",
+  "deliverable_expectations_ko": [
+    "1024x1024 해상도 규격 및 상하/좌우 경계면 연속성 오차 0.0000 보장",
+    "코듀라 직물(Weave), 금속 스크래치(Scratch), 고원 먼지(Dust), 산화 녹(Rust) 4채널 마스크 완비",
+    "MIT 라이선스 절차적 생성 코드 및 통계 요약 포함"
+  ],
+  "required_gates": [
+    "RL-GCO-01",
+    "RL-GCO-02",
+    "RL-GCO-03",
+    "RL-GCO-04",
+    "RL-GCO-05",
+    "RL-GCO-06"
+  ],
+  "cloud_prompt_3lines_ko": [
+    "1. 클라우드 가상 컴퓨터 터미널에서 `git clone https://github.com/icandoit122118-del/gemini-cloud-outsource-hub.git work && cd work` 명령으로 공개 외주 우체통 저장소를 복제하세요.",
+    "2. `jobs/JOB-05/BRIEF_KO.md` 작업지시서를 읽고 `python scripts/run_cloud_job.py --job JOB-05` 및 `python -m unittest discover -s tests -p \"test_*.py\" -v`를 실행해 6대 보안·품질 게이트(RL-GCO-01..06) 6/6 통과를 자체 검증하세요.",
+    "3. 검증 완료된 납품 번들(`deliveries/JOB-05_delivery.zip` 및 `deliveries/JOB-05_delivery.json`)을 생성하고 터미널 출력 요약과 함께 납품해 주세요."
+  ]
+}

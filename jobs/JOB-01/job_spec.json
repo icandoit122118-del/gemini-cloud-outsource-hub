@@ -1,0 +1,30 @@
+{
+  "schema": "gemini-cloud-outsource-job-v1",
+  "job_id": "JOB-01",
+  "title_ko": "언리얼 5.9 공식 문서 정독 기반 나이아가라·카오스·메타사운드·커먼UI 표준 스킬 자동 제조",
+  "category": "ue59_skill_factory",
+  "priority": 1,
+  "security_classification": "PUBLIC_CLEAN_ZERO_SECRET",
+  "target_repo": "icandoit122118-del/gemini-cloud-outsource-hub",
+  "workspace_rel_path": "jobs/JOB-01",
+  "target_import_rel_dir": "imported_skills/ue59-official-core-subsystems",
+  "summary_ko": "에픽 게임즈 언리얼 5.9 공개 공식 문서를 정독하여 나이아가라·카오스·메타사운드·커먼UI 4대 서브시스템의 YAML 헤더·검증 스크립트·수치 게이트가 완비된 표준 스킬(SKILL.md)을 제조한다.",
+  "deliverable_expectations_ko": [
+    "YAML 프론트매터(name, description, ue_version: 5.9, license: MIT) 필수 포함",
+    "Niagara, Chaos, MetaSounds, CommonUI 4대 서브시스템 핵심 아키텍처 및 콘솔 변수 규격 수록",
+    "파이썬 수치 게이트 자동 검증 스크립트(verify_skill_numeric_gates.py) 및 4개 이상 정량 임계값 포함"
+  ],
+  "required_gates": [
+    "RL-GCO-01",
+    "RL-GCO-02",
+    "RL-GCO-03",
+    "RL-GCO-04",
+    "RL-GCO-05",
+    "RL-GCO-06"
+  ],
+  "cloud_prompt_3lines_ko": [
+    "1. 클라우드 가상 컴퓨터 터미널에서 `git clone https://github.com/icandoit122118-del/gemini-cloud-outsource-hub.git work && cd work` 명령으로 공개 외주 우체통 저장소를 복제하세요.",
+    "2. `jobs/JOB-01/BRIEF_KO.md` 작업지시서를 읽고 `python scripts/run_cloud_job.py --job JOB-01` 및 `python -m unittest discover -s tests -p \"test_*.py\" -v`를 실행해 6대 보안·품질 게이트(RL-GCO-01..06) 6/6 통과를 자체 검증하세요.",
+    "3. 검증 완료된 납품 번들(`deliveries/JOB-01_delivery.zip` 및 `deliveries/JOB-01_delivery.json`)을 생성하고 터미널 출력 요약과 함께 납품해 주세요."
+  ]
+}

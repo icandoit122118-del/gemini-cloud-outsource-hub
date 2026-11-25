@@ -1,0 +1,73 @@
+{
+  "schema": "gemini-cloud-outsource-harvest-report-v1",
+  "total_deliveries_inspected": 8,
+  "accepted_count": 8,
+  "rejected_count": 0,
+  "all_accepted": true,
+  "deliveries": {
+    "JOB-01": {
+      "job_id": "JOB-01",
+      "accepted": true,
+      "imported_file_count": 3,
+      "passed_gates": 6,
+      "total_gates": 6,
+      "failed_redlights": []
+    },
+    "JOB-02": {
+      "job_id": "JOB-02",
+      "accepted": true,
+      "imported_file_count": 3,
+      "passed_gates": 6,
+      "total_gates": 6,
+      "failed_redlights": []
+    },
+    "JOB-03": {
+      "job_id": "JOB-03",
+      "accepted": true,
+      "imported_file_count": 3,
+      "passed_gates": 6,
+      "total_gates": 6,
+      "failed_redlights": []
+    },
+    "JOB-04": {
+      "job_id": "JOB-04",
+      "accepted": true,
+      "imported_file_count": 3,
+      "passed_gates": 6,
+      "total_gates": 6,
+      "failed_redlights": []
+    },
+    "JOB-05": {
+      "job_id": "JOB-05",
+      "accepted": true,
+      "imported_file_count": 3,
+      "passed_gates": 6,
+      "total_gates": 6,
+      "failed_redlights": []
+    },
+    "JOB-06": {
+      "job_id": "JOB-06",
+      "accepted": true,
+      "imported_file_count": 3,
+      "passed_gates": 6,
+      "total_gates": 6,
+      "failed_redlights": []
+    },
+    "JOB-07": {
+      "job_id": "JOB-07",
+      "accepted": true,
+      "imported_file_count": 3,
+      "passed_gates": 6,
+      "total_gates": 6,
+      "failed_redlights": []
+    },
+    "JOB-08": {
+      "job_id": "JOB-08",
+      "accepted": true,
+      "imported_file_count": 3,
+      "passed_gates": 6,
+      "total_gates": 6,
+      "failed_redlights": []
+    }
+  }
+}

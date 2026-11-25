@@ -1,0 +1,30 @@
+{
+  "schema": "gemini-cloud-outsource-job-v1",
+  "job_id": "JOB-03",
+  "title_ko": "하이브리드 파밍 전리품 240종 카탈로그 및 배낭 무게 경제 10만 회 몬테카를로 시뮬레이션",
+  "category": "loot_economy_monte_carlo",
+  "priority": 3,
+  "security_classification": "PUBLIC_CLEAN_ZERO_SECRET",
+  "target_repo": "icandoit122118-del/gemini-cloud-outsource-hub",
+  "workspace_rel_path": "jobs/JOB-03",
+  "target_import_rel_dir": "imported_simulations/hybrid_loot_240_monte_carlo",
+  "summary_ko": "봉쇄된 격리 고원 분지 내 4단 선반·서랍·보관함에서 파밍 가능한 전리품 240종(흔함·고급·희귀·전설)의 무게·부피·가치 테이블을 설계하고 100,000회 몬테카를로 탈출 시뮬레이션을 수행한다.",
+  "deliverable_expectations_ko": [
+    "고유 전리품 정확히 240종(흔함 110·고급 70·희귀 42·전설 18) 구성",
+    "100,000회 몬테카를로 파밍·배낭 적재 시뮬레이션 통계(평균 탈출 무게, 95백분위 무게, 과적률) 산출",
+    "모든 한글 명칭 필드에 영문자 혼입 0건"
+  ],
+  "required_gates": [
+    "RL-GCO-01",
+    "RL-GCO-02",
+    "RL-GCO-03",
+    "RL-GCO-04",
+    "RL-GCO-05",
+    "RL-GCO-06"
+  ],
+  "cloud_prompt_3lines_ko": [
+    "1. 클라우드 가상 컴퓨터 터미널에서 `git clone https://github.com/icandoit122118-del/gemini-cloud-outsource-hub.git work && cd work` 명령으로 공개 외주 우체통 저장소를 복제하세요.",
+    "2. `jobs/JOB-03/BRIEF_KO.md` 작업지시서를 읽고 `python scripts/run_cloud_job.py --job JOB-03` 및 `python -m unittest discover -s tests -p \"test_*.py\" -v`를 실행해 6대 보안·품질 게이트(RL-GCO-01..06) 6/6 통과를 자체 검증하세요.",
+    "3. 검증 완료된 납품 번들(`deliveries/JOB-03_delivery.zip` 및 `deliveries/JOB-03_delivery.json`)을 생성하고 터미널 출력 요약과 함께 납품해 주세요."
+  ]
+}

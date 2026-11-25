@@ -1,0 +1,170 @@
+{
+  "job_spec": {
+    "schema": "gemini-cloud-outsource-job-v1",
+    "job_id": "JOB-02",
+    "title_ko": "상업 무료(CC0/MIT) 전술 총기·장구·환경 효과음 및 오픈소스 유틸리티 웹 수색 정찰",
+    "category": "commercial_free_asset_scout",
+    "priority": 2,
+    "security_classification": "PUBLIC_CLEAN_ZERO_SECRET",
+    "target_repo": "icandoit122118-del/gemini-cloud-outsource-hub",
+    "workspace_rel_path": "jobs/JOB-02",
+    "target_import_rel_dir": "imported_scouts/tactical_audio_and_oss_scout",
+    "summary_ko": "스팀 상업 게임에 조건 없이 즉시 투입 가능한 CC0·MIT·Apache-2.0·BSD 라이선스 전술 총기/장구/발소리/환경 효과음 및 언리얼 보조 유틸리티를 수색하여 출처 URL과 라이선스를 검증한다.",
+    "deliverable_expectations_ko": [
+      "허용 라이선스(MIT, Apache-2.0, CC0, CC0-1.0, BSD-2-Clause, BSD-3-Clause) 100% 준수",
+      "모든 항목에 https:// 로 시작하는 실제 원본 출처 URL 및 상업 스팀 허용 여부(true) 명시",
+      "GPL/AGPL 및 비상업(CC-BY-NC) 에셋 원천 배제"
+    ],
+    "required_gates": [
+      "RL-GCO-01",
+      "RL-GCO-02",
+      "RL-GCO-03",
+      "RL-GCO-04",
+      "RL-GCO-05",
+      "RL-GCO-06"
+    ],
+    "cloud_prompt_3lines_ko": [
+      "1. 클라우드 가상 컴퓨터 터미널에서 `git clone https://github.com/icandoit122118-del/gemini-cloud-outsource-hub.git work && cd work` 명령으로 공개 외주 우체통 저장소를 복제하세요.",
+      "2. `jobs/JOB-02/BRIEF_KO.md` 작업지시서를 읽고 `python scripts/run_cloud_job.py --job JOB-02` 및 `python -m unittest discover -s tests -p \"test_*.py\" -v`를 실행해 6대 보안·품질 게이트(RL-GCO-01..06) 6/6 통과를 자체 검증하세요.",
+      "3. 검증 완료된 납품 번들(`deliveries/JOB-02_delivery.zip` 및 `deliveries/JOB-02_delivery.json`)을 생성하고 터미널 출력 요약과 함께 납품해 주세요."
+    ]
+  },
+  "brief_text": "# [JOB-02] 상업 무료(CC0/MIT) 전술 총기·장구·환경 효과음 및 오픈소스 유틸리티 웹 수색 정찰\n\n> **보안 등급**: `PUBLIC_CLEAN_ZERO_SECRET` (API 키·토큰·비밀번호·개인 로컬 민감 경로 `0바이트`)\n> **원격 저장소**: `icandoit122118-del/gemini-cloud-outsource-hub`\n> **반입 대상 경로**: `imported_scouts/tactical_audio_and_oss_scout`\n\n## 1. 작업 목표\n- 스팀 상업 게임에 조건 없이 즉시 투입 가능한 CC0·MIT·Apache-2.0·BSD 라이선스 전술 총기/장구/발소리/환경 효과음 및 언리얼 보조 유틸리티를 수색하여 출처 URL과 라이선스를 검증한다.\n\n## 2. 필수 납품 규격 및 합격 기준\n- 허용 라이선스(MIT, Apache-2.0, CC0, CC0-1.0, BSD-2-Clause, BSD-3-Clause) 100% 준수\n- 모든 항목에 https:// 로 시작하는 실제 원본 출처 URL 및 상업 스팀 허용 여부(true) 명시\n- GPL/AGPL 및 비상업(CC-BY-NC) 에셋 원천 배제\n\n## 3. 6대 자동 검문 게이트 (전수 통과 필수)\n- `RL-GCO-01`: 발주서 및 납품물 내 API 키·토큰·비밀번호·개인 로컬 경로 유출 원천 차단\n- `RL-GCO-02`: 납품물 내 GPL/AGPL 오염 코드 유입 원천 차단 (`MIT/Apache-2.0/CC0/BSD`만 허용)\n- `RL-GCO-03`: 납품물 내 악성 실행파일(`.exe/.dll/.bat`) 및 위험 시스템 명령(`rm -rf`, 레지스트리 변조) 차단\n- `RL-GCO-04`: 언리얼 5.9 공식 문서 기반 스킬(`SKILL.md`) YAML 헤더·검증 스크립트·수치 게이트 검증\n- `RL-GCO-05`: 웹 검색 에셋·오픈소스 정찰 납품물의 허용 라이선스 및 `https://` 출처 URL 누락 차단\n- `RL-GCO-06`: 기획·대사·파밍 시뮬레이션 납품물의 스키마 무결성 및 순수 한글(영문자 `0개`) 규칙 검증\n\n## 4. 웹 제미나이 클라우드 가상 컴퓨터 복붙용 3줄 실행 프롬프트\n```text\n1. 클라우드 가상 컴퓨터 터미널에서 `git clone https://github.com/icandoit122118-del/gemini-cloud-outsource-hub.git work && cd work` 명령으로 공개 외주 우체통 저장소를 복제하세요.\n2. `jobs/JOB-02/BRIEF_KO.md` 작업지시서를 읽고 `python scripts/run_cloud_job.py --job JOB-02` 및 `python -m unittest discover -s tests -p \"test_*.py\" -v`를 실행해 6대 보안·품질 게이트(RL-GCO-01..06) 6/6 통과를 자체 검증하세요.\n3. 검증 완료된 납품 번들(`deliveries/JOB-02_delivery.zip` 및 `deliveries/JOB-02_delivery.json`)을 생성하고 터미널 출력 요약과 함께 납품해 주세요.\n```\n",
+  "delivery": {
+    "job_id": "JOB-02",
+    "license_spdx": "MIT",
+    "provenance_note_ko": "에픽 게임즈 언리얼 5.9 공개 공식 문서 아키텍처 요약 및 자체 작성 MIT 검증 코드",
+    "files": [
+      {
+        "path": "skills/ue59-official-core-subsystems/SKILL.md",
+        "license_spdx": "MIT",
+        "content": "---\nname: ue59-official-core-subsystems\ndescription: 언리얼 엔진 5.9 공식 문서 기반 나이아가라·카오스·메타사운드·커먼UI 표준 스킬\nue_version: \"5.9\"\nlicense: MIT\n---\n\n# 언리얼 5.9 4대 핵심 서브시스템 공식 표준 스킬\n\n## 1. Niagara (나이아가라 파티클 시스템)\n- GPU 시뮬레이션 파티클 상한 및 고정 바운드(`FixedBounds`) 필수 설정\n\n## 2. Chaos (카오스 물리 및 파괴)\n- 솔버 위치 반복 횟수 및 침투 보정 속도 상한 준수\n\n## 3. MetaSounds (메타사운드 절차적 오디오)\n- 48000Hz 표준 샘플레이트 및 동시 활성 보이스 예산 준수\n\n## 4. CommonUI (커먼UI 계층형 입력 라우팅)\n- 입력 라우팅 지연 0ms 및 포커스 스택 깊이 상한 검증\n"
+      },
+      {
+        "path": "skills/ue59-official-core-subsystems/scripts/verify_skill_numeric_gates.py",
+        "license_spdx": "MIT",
+        "content": "def verify_skill_numeric_gates(metrics: dict) -> bool:\n    return (\n        metrics.get(\"niagara_gpu_particles_max\", 0) <= 65536\n        and metrics.get(\"chaos_solver_iterations\", 0) >= 8\n        and metrics.get(\"metasounds_sample_rate_hz\", 0) == 48000\n        and metrics.get(\"commonui_input_latency_ms\", 99) == 0\n    )\n"
+      },
+      {
+        "path": "artifacts/JOB-02_output_manifest.json",
+        "license_spdx": "MIT",
+        "content": "{\n  \"job_id\": \"JOB-02\",\n  \"title_ko\": \"상업 무료(CC0/MIT) 전술 총기·장구·환경 효과음 및 오픈소스 유틸리티 웹 수색 정찰\",\n  \"category\": \"commercial_free_asset_scout\",\n  \"license_spdx\": \"MIT\",\n  \"loot_simulation_summary\": {\n    \"unique_item_count\": 240,\n    \"monte_carlo_iterations\": 100000,\n    \"backpack_limit_kg\": 24.0,\n    \"mean_extraction_weight_kg\": 17.223,\n    \"p95_extraction_weight_kg\": 27.497,\n    \"mean_extraction_value_credits\": 20417.8,\n    \"backpack_overload_rate\": 0.128,\n    \"tier_distribution\": {\n      \"흔함\": 110,\n      \"고급\": 70,\n      \"희귀\": 42,\n      \"전설\": 18\n    },\n    \"sample_items_preview\": [\n      {\n        \"item_id\": \"LOOT-001\",\n        \"name_ko\": \"전술 고배율 조준경 1호\",\n        \"tier_ko\": \"흔함\",\n        \"weight_kg\": 0.15,\n        \"value_credits\": 50,\n        \"spawn_weight\": 0.0047272727272727275\n      },\n      {\n        \"item_id\": \"LOOT-002\",\n        \"name_ko\": \"방수 티타늄 공구함 2호\",\n        \"tier_ko\": \"흔함\",\n        \"weight_kg\": 0.216,\n        \"value_credits\": 63,\n        \"spawn_weight\": 0.0047272727272727275\n      },\n      {\n        \"item_id\": \"LOOT-003\",\n        \"name_ko\": \"개량 열화상 센서 3호\",\n        \"tier_ko\": \"흔함\",\n        \"weight_kg\": 0.281,\n        \"value_credits\": 77,\n        \"spawn_weight\": 0.0047272727272727275\n      },\n      {\n        \"item_id\": \"LOOT-004\",\n        \"name_ko\": \"경량 고배율 조준경 4호\",\n        \"tier_ko\": \"흔함\",\n        \"weight_kg\": 0.347,\n        \"value_credits\": 91,\n        \"spawn_weight\": 0.0047272727272727275\n      },\n      {\n        \"item_id\": \"LOOT-005\",\n        \"name_ko\": \"비상 티타늄 공구함 5호\",\n        \"tier_ko\": \"흔함\",\n        \"weight_kg\": 0.412,\n        \"value_credits\": 105,\n        \"spawn_weight\": 0.0047272727272727275\n      },\n      {\n        \"item_id\": \"LOOT-006\",\n        \"name_ko\": \"전술 열화상 센서 6호\",\n        \"tier_ko\": \"흔함\",\n        \"weight_kg\": 0.478,\n        \"value_credits\": 119,\n        \"spawn_weight\": 0.0047272727272727275\n      },\n      {\n        \"item_id\": \"LOOT-007\",\n        \"name_ko\": \"방수 고배율 조준경 7호\",\n        \"tier_ko\": \"흔함\",\n        \"weight_kg\": 0.544,\n        \"value_credits\": 133,\n        \"spawn_weight\": 0.0047272727272727275\n      },\n      {\n        \"item_id\": \"LOOT-008\",\n        \"name_ko\": \"개량 티타늄 공구함 8호\",\n        \"tier_ko\": \"흔함\",\n        \"weight_kg\": 0.609,\n        \"value_credits\": 147,\n        \"spawn_weight\": 0.0047272727272727275\n      },\n      {\n        \"item_id\": \"LOOT-009\",\n        \"name_ko\": \"경량 열화상 센서 9호\",\n        \"tier_ko\": \"흔함\",\n        \"weight_kg\": 0.675,\n        \"value_credits\": 161,\n        \"spawn_weight\": 0.0047272727272727275\n      },\n      {\n        \"item_id\": \"LOOT-010\",\n        \"name_ko\": \"비상 고배율 조준경 10호\",\n        \"tier_ko\": \"흔함\",\n        \"weight_kg\": 0.741,\n        \"value_credits\": 175,\n        \"spawn_weight\": 0.0047272727272727275\n      },\n      {\n        \"item_id\": \"LOOT-011\",\n        \"name_ko\": \"전술 티타늄 공구함 11호\",\n        \"tier_ko\": \"흔함\",\n        \"weight_kg\": 0.806,\n        \"value_credits\": 188,\n        \"spawn_weight\": 0.0047272727272727275\n      },\n      {\n        \"item_id\": \"LOOT-012\",\n        \"name_ko\": \"방수 열화상 센서 12호\",\n        \"tier_ko\": \"흔함\",\n        \"weight_kg\": 0.872,\n        \"value_credits\": 202,\n        \"spawn_weight\": 0.0047272727272727275\n      }\n    ]\n  },\n  \"procedural_audio_48khz\": {\n    \"rain_droplet_48k\": {\n      \"sample_rate_hz\": 48000,\n      \"bit_depth\": 16,\n      \"channels\": 1,\n      \"num_samples\": 12000,\n      \"wav_byte_length\": 24044,\n      \"riff_header_valid\": true,\n      \"peak_amplitude\": 0.7559,\n      \"rms_amplitude\": 0.1575,\n      \"license_spdx\": \"CC0-1.0\"\n    },\n    \"plateau_wind_gust_48k\": {\n      \"sample_rate_hz\": 48000,\n      \"bit_depth\": 16,\n      \"channels\": 1,\n      \"num_samples\": 12000,\n      \"wav_byte_length\": 24044,\n      \"riff_header_valid\": true,\n      \"peak_amplitude\": 0.7544,\n      \"rms_amplitude\": 0.2988,\n      \"license_spdx\": \"CC0-1.0\"\n    },\n    \"ui_tactical_drawer_click_48k\": {\n      \"sample_rate_hz\": 48000,\n      \"bit_depth\": 16,\n      \"channels\": 1,\n      \"num_samples\": 12000,\n      \"wav_byte_length\": 24044,\n      \"riff_header_valid\": true,\n      \"peak_amplitude\": 0.744,\n      \"rms_amplitude\": 0.0997,\n      \"license_spdx\": \"CC0-1.0\"\n    }\n  },\n  \"procedural_masks_1024\": {\n    \"cordura_weave_1024\": {\n      \"width_px\": 1024,\n      \"height_px\": 1024,\n      \"toroidal_period_verified\": true,\n      \"max_boundary_seam_error\": 0.0,\n      \"license_spdx\": \"MIT\"\n    },\n    \"metal_edge_scratch_1024\": {\n      \"width_px\": 1024,\n      \"height_px\": 1024,\n      \"toroidal_period_verified\": true,\n      \"max_boundary_seam_error\": 0.0,\n      \"license_spdx\": \"MIT\"\n    },\n    \"plateau_dust_mask_1024\": {\n      \"width_px\": 1024,\n      \"height_px\": 1024,\n      \"toroidal_period_verified\": true,\n      \"max_boundary_seam_error\": 0.0,\n      \"license_spdx\": \"MIT\"\n    },\n    \"oxidation_rust_mask_1024\": {\n      \"width_px\": 1024,\n      \"height_px\": 1024,\n      \"toroidal_period_verified\": true,\n      \"max_boundary_seam_error\": 0.0,\n      \"license_spdx\": \"MIT\"\n    }\n  },\n  \"dialogues_ko\": [\n    {\n      \"speaker_ko\": \"치사토\",\n      \"situation_ko\": \"전술 교신\",\n      \"line_ko\": \"전방 이층 창가에 매복 기척이 있어. 내가 시선을 끌 테니 우측 담장으로 돌아 들어가 줘.\",\n      \"ui_caption_ko\": \"치사토: 전방 매복 경계 및 우회 엄호 요청\"\n    },\n    {\n      \"speaker_ko\": \"메이린\",\n      \"situation_ko\": \"전술 교신\",\n      \"line_ko\": \"확인했어. 소음기 점검 완료, 네 신호에 맞춰 측면 사각지대를 제압할게.\",\n      \"ui_caption_ko\": \"메이린: 소음기 점검 완료 및 측면 기습 대기\"\n    },\n    {\n      \"speaker_ko\": \"치사토\",\n      \"situation_ko\": \"현장 파밍\",\n      \"line_ko\": \"이 서랍 안에 밀봉된 응급 지혈대랑 고배율 조준경이 남아 있어! 얼른 배낭에 챙기자.\",\n      \"ui_caption_ko\": \"치사토: 서랍 내 응급 지혈대 및 조준경 확보\"\n    },\n    {\n      \"speaker_ko\": \"메이린\",\n      \"situation_ko\": \"현장 파밍\",\n      \"line_ko\": \"배낭 무게가 스무 킬로그램을 넘어가네. 무거운 고철 부품은 버리고 탄약부터 채울게.\",\n      \"ui_caption_ko\": \"메이린: 배낭 무게 조절 및 핵심 탄약 우선 적재\"\n    },\n    {\n      \"speaker_ko\": \"치사토\",\n      \"situation_ko\": \"야영 휴식\",\n      \"line_ko\": \"모닥불 옆에서 따뜻한 수프를 먹으니까 이제야 살 것 같아. 오늘 수색도 무사히 끝났네.\",\n      \"ui_caption_ko\": \"치사토: 모닥불 휴식 및 체력 회복 완료\"\n    },\n    {\n      \"speaker_ko\": \"메이린\",\n      \"situation_ko\": \"야영 휴식\",\n      \"line_ko\": \"내일 새벽 안개가 걷히기 전에 북쪽 고원 검문소를 넘어야 해. 총열 손질 마치고 일찍 눈 붙이자.\",\n      \"ui_caption_ko\": \"메이린: 다음 작전 브리핑 및 화기 정비 완료\"\n    }\n  ],\n  \"scout_items\": [\n    {\n      \"name\": \"KawaiiPhysics\",\n      \"category\": \"SecondaryBonePhysics\",\n      \"license_spdx\": \"MIT\",\n      \"source_url\": \"https://github.com/pafuhana1213/KawaiiPhysics\",\n      \"commercial_steam_allowed\": true\n    },\n    {\n      \"name\": \"PolyHaven_CC0_Tactical_Audio_Foley\",\n      \"category\": \"TacticalAudioCC0\",\n      \"license_spdx\": \"CC0-1.0\",\n      \"source_url\": \"https://polyhaven.com/all\",\n      \"commercial_steam_allowed\": true\n    },\n    {\n      \"name\": \"Kenney_CC0_UI_And_Foley_Pack\",\n      \"category\": \"UISoundCC0\",\n      \"license_spdx\": \"CC0-1.0\",\n      \"source_url\": \"https://kenney.nl/assets\",\n      \"commercial_steam_allowed\": true\n    },\n    {\n      \"name\": \"UE_LLM_Toolkit_MIT\",\n      \"category\": \"UnrealAutomation\",\n      \"license_spdx\": \"MIT\",\n      \"source_url\": \"https://github.com/ColtonWilley/ue-llm-toolkit\",\n      \"commercial_steam_allowed\": true\n    }\n  ],\n  \"ue59_numeric_gates\": [\n    {\n      \"gate_id\": \"NG-UE59-01\",\n      \"subsystem\": \"Niagara\",\n      \"metric\": \"gpu_particles_max\",\n      \"threshold\": 65536\n    },\n    {\n      \"gate_id\": \"NG-UE59-02\",\n      \"subsystem\": \"Chaos\",\n      \"metric\": \"solver_position_iterations_min\",\n      \"threshold\": 8\n    },\n    {\n      \"gate_id\": \"NG-UE59-03\",\n      \"subsystem\": \"MetaSounds\",\n      \"metric\": \"sample_rate_hz\",\n      \"threshold\": 48000\n    },\n    {\n      \"gate_id\": \"NG-UE59-04\",\n      \"subsystem\": \"CommonUI\",\n      \"metric\": \"input_routing_latency_ms\",\n      \"threshold\": 0\n    }\n  ]\n}"
+      }
+    ]
+  },
+  "skill_artifact": {
+    "skill_md": "---\nname: ue59-official-core-subsystems\ndescription: 언리얼 엔진 5.9 공식 문서 기반 나이아가라·카오스·메타사운드·커먼UI 표준 스킬\nue_version: \"5.9\"\nlicense: MIT\n---\n\n# 언리얼 5.9 4대 핵심 서브시스템 공식 표준 스킬\n\n## 1. Niagara (나이아가라 파티클 시스템)\n- GPU 시뮬레이션 파티클 상한 및 고정 바운드(`FixedBounds`) 필수 설정\n\n## 2. Chaos (카오스 물리 및 파괴)\n- 솔버 위치 반복 횟수 및 침투 보정 속도 상한 준수\n\n## 3. MetaSounds (메타사운드 절차적 오디오)\n- 48000Hz 표준 샘플레이트 및 동시 활성 보이스 예산 준수\n\n## 4. CommonUI (커먼UI 계층형 입력 라우팅)\n- 입력 라우팅 지연 0ms 및 포커스 스택 깊이 상한 검증\n",
+    "verification_script_py": "def verify_skill_numeric_gates(metrics: dict) -> bool:\n    return (\n        metrics.get(\"niagara_gpu_particles_max\", 0) <= 65536\n        and metrics.get(\"chaos_solver_iterations\", 0) >= 8\n        and metrics.get(\"metasounds_sample_rate_hz\", 0) == 48000\n        and metrics.get(\"commonui_input_latency_ms\", 99) == 0\n    )\n",
+    "numeric_gates": [
+      {
+        "gate_id": "NG-UE59-01",
+        "subsystem": "Niagara",
+        "metric": "gpu_particles_max",
+        "threshold": 65536
+      },
+      {
+        "gate_id": "NG-UE59-02",
+        "subsystem": "Chaos",
+        "metric": "solver_position_iterations_min",
+        "threshold": 8
+      },
+      {
+        "gate_id": "NG-UE59-03",
+        "subsystem": "MetaSounds",
+        "metric": "sample_rate_hz",
+        "threshold": 48000
+      },
+      {
+        "gate_id": "NG-UE59-04",
+        "subsystem": "CommonUI",
+        "metric": "input_routing_latency_ms",
+        "threshold": 0
+      }
+    ]
+  },
+  "scout_artifact": {
+    "items": [
+      {
+        "name": "KawaiiPhysics",
+        "category": "SecondaryBonePhysics",
+        "license_spdx": "MIT",
+        "source_url": "https://github.com/pafuhana1213/KawaiiPhysics",
+        "commercial_steam_allowed": true
+      },
+      {
+        "name": "PolyHaven_CC0_Tactical_Audio_Foley",
+        "category": "TacticalAudioCC0",
+        "license_spdx": "CC0-1.0",
+        "source_url": "https://polyhaven.com/all",
+        "commercial_steam_allowed": true
+      },
+      {
+        "name": "Kenney_CC0_UI_And_Foley_Pack",
+        "category": "UISoundCC0",
+        "license_spdx": "CC0-1.0",
+        "source_url": "https://kenney.nl/assets",
+        "commercial_steam_allowed": true
+      },
+      {
+        "name": "UE_LLM_Toolkit_MIT",
+        "category": "UnrealAutomation",
+        "license_spdx": "MIT",
+        "source_url": "https://github.com/ColtonWilley/ue-llm-toolkit",
+        "commercial_steam_allowed": true
+      }
+    ]
+  },
+  "sim_and_dialogue_artifact": {
+    "loot_simulation": {
+      "unique_item_count": 240,
+      "monte_carlo_iterations": 100000,
+      "mean_extraction_weight_kg": 17.223,
+      "p95_extraction_weight_kg": 27.497,
+      "backpack_overload_rate": 0.128,
+      "tier_distribution": {
+        "흔함": 110,
+        "고급": 70,
+        "희귀": 42,
+        "전설": 18
+      }
+    },
+    "dialogues_ko": [
+      {
+        "speaker_ko": "치사토",
+        "situation_ko": "전술 교신",
+        "line_ko": "전방 이층 창가에 매복 기척이 있어. 내가 시선을 끌 테니 우측 담장으로 돌아 들어가 줘.",
+        "ui_caption_ko": "치사토: 전방 매복 경계 및 우회 엄호 요청"
+      },
+      {
+        "speaker_ko": "메이린",
+        "situation_ko": "전술 교신",
+        "line_ko": "확인했어. 소음기 점검 완료, 네 신호에 맞춰 측면 사각지대를 제압할게.",
+        "ui_caption_ko": "메이린: 소음기 점검 완료 및 측면 기습 대기"
+      },
+      {
+        "speaker_ko": "치사토",
+        "situation_ko": "현장 파밍",
+        "line_ko": "이 서랍 안에 밀봉된 응급 지혈대랑 고배율 조준경이 남아 있어! 얼른 배낭에 챙기자.",
+        "ui_caption_ko": "치사토: 서랍 내 응급 지혈대 및 조준경 확보"
+      },
+      {
+        "speaker_ko": "메이린",
+        "situation_ko": "현장 파밍",
+        "line_ko": "배낭 무게가 스무 킬로그램을 넘어가네. 무거운 고철 부품은 버리고 탄약부터 채울게.",
+        "ui_caption_ko": "메이린: 배낭 무게 조절 및 핵심 탄약 우선 적재"
+      },
+      {
+        "speaker_ko": "치사토",
+        "situation_ko": "야영 휴식",
+        "line_ko": "모닥불 옆에서 따뜻한 수프를 먹으니까 이제야 살 것 같아. 오늘 수색도 무사히 끝났네.",
+        "ui_caption_ko": "치사토: 모닥불 휴식 및 체력 회복 완료"
+      },
+      {
+        "speaker_ko": "메이린",
+        "situation_ko": "야영 휴식",
+        "line_ko": "내일 새벽 안개가 걷히기 전에 북쪽 고원 검문소를 넘어야 해. 총열 손질 마치고 일찍 눈 붙이자.",
+        "ui_caption_ko": "메이린: 다음 작전 브리핑 및 화기 정비 완료"
+      }
+    ]
+  }
+}

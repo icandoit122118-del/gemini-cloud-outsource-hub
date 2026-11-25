@@ -1,0 +1,30 @@
+{
+  "schema": "gemini-cloud-outsource-job-v1",
+  "job_id": "JOB-08",
+  "title_ko": "언리얼 5.9 셰이더·물리 수식 사전 격자 검증기(unittest) 대량 제작",
+  "category": "ue59_shader_physics_grid_unittest",
+  "priority": 8,
+  "security_classification": "PUBLIC_CLEAN_ZERO_SECRET",
+  "target_repo": "icandoit122118-del/gemini-cloud-outsource-hub",
+  "workspace_rel_path": "jobs/JOB-08",
+  "target_import_rel_dir": "imported_tests/ue59_shader_physics_grid",
+  "summary_ko": "언리얼 5.9 에디터를 띄우지 않고도 0 MB VRAM 환경에서 카툰 셰이더(GT7 톤매퍼, 부호 깊이 림, 180도 완만 법선)와 물리 잔디 원호 굽힘 수식을 1,000개 이상의 매개변수 격자에서 사전 검증하는 파이썬 unittest 스위트를 제조한다.",
+  "deliverable_expectations_ko": [
+    "표준 파이썬 unittest 기반 0 MB VRAM 고속 격자 검증 스크립트 제공",
+    "GT7 톤매퍼 단조증가성, 부호 깊이 림 가림막 기각, 잔디 줄기 길이 보존(1.0000) 격자 테스트 완비",
+    "외부 실행파일이나 위험 명령 없이 순수 수학·표준 라이브러리로만 작동"
+  ],
+  "required_gates": [
+    "RL-GCO-01",
+    "RL-GCO-02",
+    "RL-GCO-03",
+    "RL-GCO-04",
+    "RL-GCO-05",
+    "RL-GCO-06"
+  ],
+  "cloud_prompt_3lines_ko": [
+    "1. 클라우드 가상 컴퓨터 터미널에서 `git clone https://github.com/icandoit122118-del/gemini-cloud-outsource-hub.git work && cd work` 명령으로 공개 외주 우체통 저장소를 복제하세요.",
+    "2. `jobs/JOB-08/BRIEF_KO.md` 작업지시서를 읽고 `python scripts/run_cloud_job.py --job JOB-08` 및 `python -m unittest discover -s tests -p \"test_*.py\" -v`를 실행해 6대 보안·품질 게이트(RL-GCO-01..06) 6/6 통과를 자체 검증하세요.",
+    "3. 검증 완료된 납품 번들(`deliveries/JOB-08_delivery.zip` 및 `deliveries/JOB-08_delivery.json`)을 생성하고 터미널 출력 요약과 함께 납품해 주세요."
+  ]
+}

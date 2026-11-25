@@ -1,0 +1,88 @@
+{
+  "schema": "gemini-cloud-outsource-queue-manifest-v1",
+  "repo": "icandoit122118-del/gemini-cloud-outsource-hub",
+  "security_classification": "PUBLIC_CLEAN_ZERO_SECRET",
+  "total_jobs": 8,
+  "jobs": [
+    {
+      "job_id": "JOB-01",
+      "title_ko": "언리얼 5.9 공식 문서 정독 기반 나이아가라·카오스·메타사운드·커먼UI 표준 스킬 자동 제조",
+      "category": "ue59_skill_factory",
+      "priority": 1,
+      "spec_path": "jobs/JOB-01/job_spec.json",
+      "brief_path": "jobs/JOB-01/BRIEF_KO.md",
+      "target_import_rel_dir": "imported_skills/ue59-official-core-subsystems",
+      "security_gate_rl_gco_01": "PASS"
+    },
+    {
+      "job_id": "JOB-02",
+      "title_ko": "상업 무료(CC0/MIT) 전술 총기·장구·환경 효과음 및 오픈소스 유틸리티 웹 수색 정찰",
+      "category": "commercial_free_asset_scout",
+      "priority": 2,
+      "spec_path": "jobs/JOB-02/job_spec.json",
+      "brief_path": "jobs/JOB-02/BRIEF_KO.md",
+      "target_import_rel_dir": "imported_scouts/tactical_audio_and_oss_scout",
+      "security_gate_rl_gco_01": "PASS"
+    },
+    {
+      "job_id": "JOB-03",
+      "title_ko": "하이브리드 파밍 전리품 240종 카탈로그 및 배낭 무게 경제 10만 회 몬테카를로 시뮬레이션",
+      "category": "loot_economy_monte_carlo",
+      "priority": 3,
+      "spec_path": "jobs/JOB-03/job_spec.json",
+      "brief_path": "jobs/JOB-03/BRIEF_KO.md",
+      "target_import_rel_dir": "imported_simulations/hybrid_loot_240_monte_carlo",
+      "security_gate_rl_gco_01": "PASS"
+    },
+    {
+      "job_id": "JOB-04",
+      "title_ko": "무저작권 파이썬 과학연산 기반 절차적 빗소리·바람·UI 조작음 48kHz 파형 합성",
+      "category": "procedural_audio_48khz",
+      "priority": 4,
+      "spec_path": "jobs/JOB-04/job_spec.json",
+      "brief_path": "jobs/JOB-04/BRIEF_KO.md",
+      "target_import_rel_dir": "imported_audio/procedural_48khz_sfx",
+      "security_gate_rl_gco_01": "PASS"
+    },
+    {
+      "job_id": "JOB-05",
+      "title_ko": "무봉제 1024x1024 전술 직물·스크래치·먼지·녹 마스크 절차적 합성",
+      "category": "procedural_seamless_masks_1024",
+      "priority": 5,
+      "spec_path": "jobs/JOB-05/job_spec.json",
+      "brief_path": "jobs/JOB-05/BRIEF_KO.md",
+      "target_import_rel_dir": "imported_masks/tactical_seamless_1024",
+      "security_gate_rl_gco_01": "PASS"
+    },
+    {
+      "job_id": "JOB-06",
+      "title_ko": "치사토·메이린 상황별 순수 한글 전술 교신·파밍·야영 상호작용 대사집 기획",
+      "category": "pure_korean_character_dialogue",
+      "priority": 6,
+      "spec_path": "jobs/JOB-06/job_spec.json",
+      "brief_path": "jobs/JOB-06/BRIEF_KO.md",
+      "target_import_rel_dir": "imported_narratives/chisato_meilin_dialogues_ko",
+      "security_gate_rl_gco_01": "PASS"
+    },
+    {
+      "job_id": "JOB-07",
+      "title_ko": "스팀 서브컬처·익스트랙션 슈터 인기작 리뷰 분석 및 차별화 기획서",
+      "category": "steam_market_differentiation_spec",
+      "priority": 7,
+      "spec_path": "jobs/JOB-07/job_spec.json",
+      "brief_path": "jobs/JOB-07/BRIEF_KO.md",
+      "target_import_rel_dir": "imported_designs/steam_extraction_differentiation",
+      "security_gate_rl_gco_01": "PASS"
+    },
+    {
+      "job_id": "JOB-08",
+      "title_ko": "언리얼 5.9 셰이더·물리 수식 사전 격자 검증기(unittest) 대량 제작",
+      "category": "ue59_shader_physics_grid_unittest",
+      "priority": 8,
+      "spec_path": "jobs/JOB-08/job_spec.json",
+      "brief_path": "jobs/JOB-08/BRIEF_KO.md",
+      "target_import_rel_dir": "imported_tests/ue59_shader_physics_grid",
+      "security_gate_rl_gco_01": "PASS"
+    }
+  ]
+}

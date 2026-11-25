@@ -1,0 +1,50 @@
+{
+  "JOB-01": {
+    "job_id": "JOB-01",
+    "title_ko": "언리얼 5.9 공식 문서 정독 기반 나이아가라·카오스·메타사운드·커먼UI 표준 스킬 자동 제조",
+    "line_count": 3,
+    "prompt_3lines_ko": "1. 클라우드 가상 컴퓨터 터미널에서 `git clone https://github.com/icandoit122118-del/gemini-cloud-outsource-hub.git work && cd work` 명령으로 공개 외주 우체통 저장소를 복제하세요.\n2. `jobs/JOB-01/BRIEF_KO.md` 작업지시서를 읽고 `python scripts/run_cloud_job.py --job JOB-01` 및 `python -m unittest discover -s tests -p \"test_*.py\" -v`를 실행해 6대 보안·품질 게이트(RL-GCO-01..06) 6/6 통과를 자체 검증하세요.\n3. 검증 완료된 납품 번들(`deliveries/JOB-01_delivery.zip` 및 `deliveries/JOB-01_delivery.json`)을 생성하고 터미널 출력 요약과 함께 납품해 주세요."
+  },
+  "JOB-02": {
+    "job_id": "JOB-02",
+    "title_ko": "상업 무료(CC0/MIT) 전술 총기·장구·환경 효과음 및 오픈소스 유틸리티 웹 수색 정찰",
+    "line_count": 3,
+    "prompt_3lines_ko": "1. 클라우드 가상 컴퓨터 터미널에서 `git clone https://github.com/icandoit122118-del/gemini-cloud-outsource-hub.git work && cd work` 명령으로 공개 외주 우체통 저장소를 복제하세요.\n2. `jobs/JOB-02/BRIEF_KO.md` 작업지시서를 읽고 `python scripts/run_cloud_job.py --job JOB-02` 및 `python -m unittest discover -s tests -p \"test_*.py\" -v`를 실행해 6대 보안·품질 게이트(RL-GCO-01..06) 6/6 통과를 자체 검증하세요.\n3. 검증 완료된 납품 번들(`deliveries/JOB-02_delivery.zip` 및 `deliveries/JOB-02_delivery.json`)을 생성하고 터미널 출력 요약과 함께 납품해 주세요."
+  },
+  "JOB-03": {
+    "job_id": "JOB-03",
+    "title_ko": "하이브리드 파밍 전리품 240종 카탈로그 및 배낭 무게 경제 10만 회 몬테카를로 시뮬레이션",
+    "line_count": 3,
+    "prompt_3lines_ko": "1. 클라우드 가상 컴퓨터 터미널에서 `git clone https://github.com/icandoit122118-del/gemini-cloud-outsource-hub.git work && cd work` 명령으로 공개 외주 우체통 저장소를 복제하세요.\n2. `jobs/JOB-03/BRIEF_KO.md` 작업지시서를 읽고 `python scripts/run_cloud_job.py --job JOB-03` 및 `python -m unittest discover -s tests -p \"test_*.py\" -v`를 실행해 6대 보안·품질 게이트(RL-GCO-01..06) 6/6 통과를 자체 검증하세요.\n3. 검증 완료된 납품 번들(`deliveries/JOB-03_delivery.zip` 및 `deliveries/JOB-03_delivery.json`)을 생성하고 터미널 출력 요약과 함께 납품해 주세요."
+  },
+  "JOB-04": {
+    "job_id": "JOB-04",
+    "title_ko": "무저작권 파이썬 과학연산 기반 절차적 빗소리·바람·UI 조작음 48kHz 파형 합성",
+    "line_count": 3,
+    "prompt_3lines_ko": "1. 클라우드 가상 컴퓨터 터미널에서 `git clone https://github.com/icandoit122118-del/gemini-cloud-outsource-hub.git work && cd work` 명령으로 공개 외주 우체통 저장소를 복제하세요.\n2. `jobs/JOB-04/BRIEF_KO.md` 작업지시서를 읽고 `python scripts/run_cloud_job.py --job JOB-04` 및 `python -m unittest discover -s tests -p \"test_*.py\" -v`를 실행해 6대 보안·품질 게이트(RL-GCO-01..06) 6/6 통과를 자체 검증하세요.\n3. 검증 완료된 납품 번들(`deliveries/JOB-04_delivery.zip` 및 `deliveries/JOB-04_delivery.json`)을 생성하고 터미널 출력 요약과 함께 납품해 주세요."
+  },
+  "JOB-05": {
+    "job_id": "JOB-05",
+    "title_ko": "무봉제 1024x1024 전술 직물·스크래치·먼지·녹 마스크 절차적 합성",
+    "line_count": 3,
+    "prompt_3lines_ko": "1. 클라우드 가상 컴퓨터 터미널에서 `git clone https://github.com/icandoit122118-del/gemini-cloud-outsource-hub.git work && cd work` 명령으로 공개 외주 우체통 저장소를 복제하세요.\n2. `jobs/JOB-05/BRIEF_KO.md` 작업지시서를 읽고 `python scripts/run_cloud_job.py --job JOB-05` 및 `python -m unittest discover -s tests -p \"test_*.py\" -v`를 실행해 6대 보안·품질 게이트(RL-GCO-01..06) 6/6 통과를 자체 검증하세요.\n3. 검증 완료된 납품 번들(`deliveries/JOB-05_delivery.zip` 및 `deliveries/JOB-05_delivery.json`)을 생성하고 터미널 출력 요약과 함께 납품해 주세요."
+  },
+  "JOB-06": {
+    "job_id": "JOB-06",
+    "title_ko": "치사토·메이린 상황별 순수 한글 전술 교신·파밍·야영 상호작용 대사집 기획",
+    "line_count": 3,
+    "prompt_3lines_ko": "1. 클라우드 가상 컴퓨터 터미널에서 `git clone https://github.com/icandoit122118-del/gemini-cloud-outsource-hub.git work && cd work` 명령으로 공개 외주 우체통 저장소를 복제하세요.\n2. `jobs/JOB-06/BRIEF_KO.md` 작업지시서를 읽고 `python scripts/run_cloud_job.py --job JOB-06` 및 `python -m unittest discover -s tests -p \"test_*.py\" -v`를 실행해 6대 보안·품질 게이트(RL-GCO-01..06) 6/6 통과를 자체 검증하세요.\n3. 검증 완료된 납품 번들(`deliveries/JOB-06_delivery.zip` 및 `deliveries/JOB-06_delivery.json`)을 생성하고 터미널 출력 요약과 함께 납품해 주세요."
+  },
+  "JOB-07": {
+    "job_id": "JOB-07",
+    "title_ko": "스팀 서브컬처·익스트랙션 슈터 인기작 리뷰 분석 및 차별화 기획서",
+    "line_count": 3,
+    "prompt_3lines_ko": "1. 클라우드 가상 컴퓨터 터미널에서 `git clone https://github.com/icandoit122118-del/gemini-cloud-outsource-hub.git work && cd work` 명령으로 공개 외주 우체통 저장소를 복제하세요.\n2. `jobs/JOB-07/BRIEF_KO.md` 작업지시서를 읽고 `python scripts/run_cloud_job.py --job JOB-07` 및 `python -m unittest discover -s tests -p \"test_*.py\" -v`를 실행해 6대 보안·품질 게이트(RL-GCO-01..06) 6/6 통과를 자체 검증하세요.\n3. 검증 완료된 납품 번들(`deliveries/JOB-07_delivery.zip` 및 `deliveries/JOB-07_delivery.json`)을 생성하고 터미널 출력 요약과 함께 납품해 주세요."
+  },
+  "JOB-08": {
+    "job_id": "JOB-08",
+    "title_ko": "언리얼 5.9 셰이더·물리 수식 사전 격자 검증기(unittest) 대량 제작",
+    "line_count": 3,
+    "prompt_3lines_ko": "1. 클라우드 가상 컴퓨터 터미널에서 `git clone https://github.com/icandoit122118-del/gemini-cloud-outsource-hub.git work && cd work` 명령으로 공개 외주 우체통 저장소를 복제하세요.\n2. `jobs/JOB-08/BRIEF_KO.md` 작업지시서를 읽고 `python scripts/run_cloud_job.py --job JOB-08` 및 `python -m unittest discover -s tests -p \"test_*.py\" -v`를 실행해 6대 보안·품질 게이트(RL-GCO-01..06) 6/6 통과를 자체 검증하세요.\n3. 검증 완료된 납품 번들(`deliveries/JOB-08_delivery.zip` 및 `deliveries/JOB-08_delivery.json`)을 생성하고 터미널 출력 요약과 함께 납품해 주세요."
+  }
+}

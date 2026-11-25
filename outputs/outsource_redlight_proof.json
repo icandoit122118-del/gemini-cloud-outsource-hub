@@ -1,0 +1,122 @@
+{
+  "schema": "gemini-cloud-outsource-redlight-proof-v1",
+  "baseline_passed": true,
+  "baseline_passed_count": 6,
+  "baseline_total_gates": 6,
+  "caught_count": 6,
+  "total_mutations": 6,
+  "all_caught": true,
+  "mutations": {
+    "RL-GCO-01": {
+      "redlight_id": "RL-GCO-01",
+      "expected_gate": "G-GCO-01",
+      "description_ko": "발주서 내 깃허브 토큰 및 개인 로컬 민감 경로 고의 주입",
+      "caught_surgically": true,
+      "failed_gates": [
+        "G-GCO-01"
+      ],
+      "failed_redlights": [
+        "RL-GCO-01"
+      ],
+      "violations": [
+        "secret_or_sensitive_path_detected:github_token",
+        "secret_or_sensitive_path_detected:windows_user_path",
+        "secret_or_sensitive_path_detected:appdata_secret_path"
+      ]
+    },
+    "RL-GCO-02": {
+      "redlight_id": "RL-GCO-02",
+      "expected_gate": "G-GCO-02",
+      "description_ko": "납품물 내 GPL-3.0 라이선스 및 오염 주석 고의 주입",
+      "caught_surgically": true,
+      "failed_gates": [
+        "G-GCO-02"
+      ],
+      "failed_redlights": [
+        "RL-GCO-02"
+      ],
+      "violations": [
+        "disallowed_delivery_license:GPL-3.0",
+        "copyleft_contamination:gpl_spdx",
+        "copyleft_contamination:gnu_license_text",
+        "copyleft_contamination:hoyotoon_gpl_ref"
+      ]
+    },
+    "RL-GCO-03": {
+      "redlight_id": "RL-GCO-03",
+      "expected_gate": "G-GCO-03",
+      "description_ko": "납품물 내 악성 배치 실행파일(.bat), 레지스트리 변조 및 rm -rf 명령 고의 주입",
+      "caught_surgically": true,
+      "failed_gates": [
+        "G-GCO-03"
+      ],
+      "failed_redlights": [
+        "RL-GCO-03"
+      ],
+      "violations": [
+        "forbidden_executable_extension:payload/trojan_loader.bat:.bat",
+        "dangerous_system_command:payload/trojan_loader.bat:rm_rf",
+        "dangerous_system_command:payload/trojan_loader.bat:registry_mutation"
+      ]
+    },
+    "RL-GCO-04": {
+      "redlight_id": "RL-GCO-04",
+      "expected_gate": "G-GCO-04",
+      "description_ko": "언리얼 5.9 스킬 문서의 YAML 헤더·4대 서브시스템·검증 스크립트·수치 게이트 고의 제거",
+      "caught_surgically": true,
+      "failed_gates": [
+        "G-GCO-04"
+      ],
+      "failed_redlights": [
+        "RL-GCO-04"
+      ],
+      "violations": [
+        "missing_yaml_frontmatter_key:name",
+        "missing_yaml_frontmatter_key:description",
+        "missing_yaml_frontmatter_key:ue_version",
+        "missing_yaml_frontmatter_key:license",
+        "invalid_ue_version:None",
+        "missing_ue59_subsystem_section:Niagara",
+        "missing_ue59_subsystem_section:Chaos",
+        "missing_ue59_subsystem_section:MetaSounds",
+        "missing_ue59_subsystem_section:CommonUI",
+        "missing_verification_script_entrypoint",
+        "insufficient_numeric_gates_count"
+      ]
+    },
+    "RL-GCO-05": {
+      "redlight_id": "RL-GCO-05",
+      "expected_gate": "G-GCO-05",
+      "description_ko": "정찰 에셋 납품물에 비상업 라이선스(CC-BY-NC-ND-4.0) 및 빈 출처 URL 고의 주입",
+      "caught_surgically": true,
+      "failed_gates": [
+        "G-GCO-05"
+      ],
+      "failed_redlights": [
+        "RL-GCO-05"
+      ],
+      "violations": [
+        "disallowed_scout_license:KawaiiPhysics:CC-BY-NC-ND-4.0",
+        "missing_or_invalid_source_url:KawaiiPhysics",
+        "commercial_steam_not_verified:KawaiiPhysics"
+      ]
+    },
+    "RL-GCO-06": {
+      "redlight_id": "RL-GCO-06",
+      "expected_gate": "G-GCO-06",
+      "description_ko": "파밍 아이템 개수/시뮬레이션 횟수 미달 및 순수 한글 대사 내 영문 문장 고의 주입",
+      "caught_surgically": true,
+      "failed_gates": [
+        "G-GCO-06"
+      ],
+      "failed_redlights": [
+        "RL-GCO-06"
+      ],
+      "violations": [
+        "invalid_loot_item_count:15",
+        "insufficient_monte_carlo_iterations:50",
+        "ascii_english_detected_in_pure_korean:0:line_ko"
+      ]
+    }
+  }
+}

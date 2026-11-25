@@ -1,0 +1,30 @@
+{
+  "schema": "gemini-cloud-outsource-job-v1",
+  "job_id": "JOB-06",
+  "title_ko": "치사토·메이린 상황별 순수 한글 전술 교신·파밍·야영 상호작용 대사집 기획",
+  "category": "pure_korean_character_dialogue",
+  "priority": 6,
+  "security_classification": "PUBLIC_CLEAN_ZERO_SECRET",
+  "target_repo": "icandoit122118-del/gemini-cloud-outsource-hub",
+  "workspace_rel_path": "jobs/JOB-06",
+  "target_import_rel_dir": "imported_narratives/chisato_meilin_dialogues_ko",
+  "summary_ko": "주인공 치사토와 동료 메이린의 전술 교신·현장 파밍(4단 선반/서랍 수색)·야영 휴식 상황별 상호작용 대사집과 자막 UI 표기문을 100% 순수 한글(영문자 0글자)로 작성한다.",
+  "deliverable_expectations_ko": [
+    "치사토·메이린 2인 화자 필수 참여 및 전술 교신·현장 파밍·야영 휴식 3대 상황 전수 포함",
+    "모든 한글 대사(line_ko) 및 자막(ui_caption_ko) 내 영문 알파벳(A-Z, a-z) 0글자 엄수",
+    "감정 톤·음성 연출 지시문 및 상황 트리거 조건을 순수 한글로 기술"
+  ],
+  "required_gates": [
+    "RL-GCO-01",
+    "RL-GCO-02",
+    "RL-GCO-03",
+    "RL-GCO-04",
+    "RL-GCO-05",
+    "RL-GCO-06"
+  ],
+  "cloud_prompt_3lines_ko": [
+    "1. 클라우드 가상 컴퓨터 터미널에서 `git clone https://github.com/icandoit122118-del/gemini-cloud-outsource-hub.git work && cd work` 명령으로 공개 외주 우체통 저장소를 복제하세요.",
+    "2. `jobs/JOB-06/BRIEF_KO.md` 작업지시서를 읽고 `python scripts/run_cloud_job.py --job JOB-06` 및 `python -m unittest discover -s tests -p \"test_*.py\" -v`를 실행해 6대 보안·품질 게이트(RL-GCO-01..06) 6/6 통과를 자체 검증하세요.",
+    "3. 검증 완료된 납품 번들(`deliveries/JOB-06_delivery.zip` 및 `deliveries/JOB-06_delivery.json`)을 생성하고 터미널 출력 요약과 함께 납품해 주세요."
+  ]
+}

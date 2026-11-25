@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+*.log
+.DS_Store
+Thumbs.db
+deliveries/*.tmp
+staging_harvest/

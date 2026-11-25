@@ -1,0 +1,30 @@
+{
+  "schema": "gemini-cloud-outsource-job-v1",
+  "job_id": "JOB-07",
+  "title_ko": "스팀 서브컬처·익스트랙션 슈터 인기작 리뷰 분석 및 차별화 기획서",
+  "category": "steam_market_differentiation_spec",
+  "priority": 7,
+  "security_classification": "PUBLIC_CLEAN_ZERO_SECRET",
+  "target_repo": "icandoit122118-del/gemini-cloud-outsource-hub",
+  "workspace_rel_path": "jobs/JOB-07",
+  "target_import_rel_dir": "imported_designs/steam_extraction_differentiation",
+  "summary_ko": "스팀 내 주요 익스트랙션 슈터 및 서브컬처 전술 액션 게임의 핵심 불만 요인(핵 피로도, 과도한 인벤토리 퍼즐 피로, 캐릭터 애착 부족)을 정량 분석하고 격리 고원 분지 프로젝트만의 5대 차별화 설계를 도출한다.",
+  "deliverable_expectations_ko": [
+    "경쟁 장르 5대 피로 요인 및 본 프로젝트의 하이브리드 정본 파밍 해결책 1:1 매핑",
+    "카툰 미소녀(치사토·메이린) + GTA 4식 차량 트렁크 물류 + 모듈형 안전가옥 루프 수치 모델",
+    "순수 한글 요약 및 검증 가능한 핵심 성과 지표(KPI) 포함"
+  ],
+  "required_gates": [
+    "RL-GCO-01",
+    "RL-GCO-02",
+    "RL-GCO-03",
+    "RL-GCO-04",
+    "RL-GCO-05",
+    "RL-GCO-06"
+  ],
+  "cloud_prompt_3lines_ko": [
+    "1. 클라우드 가상 컴퓨터 터미널에서 `git clone https://github.com/icandoit122118-del/gemini-cloud-outsource-hub.git work && cd work` 명령으로 공개 외주 우체통 저장소를 복제하세요.",
+    "2. `jobs/JOB-07/BRIEF_KO.md` 작업지시서를 읽고 `python scripts/run_cloud_job.py --job JOB-07` 및 `python -m unittest discover -s tests -p \"test_*.py\" -v`를 실행해 6대 보안·품질 게이트(RL-GCO-01..06) 6/6 통과를 자체 검증하세요.",
+    "3. 검증 완료된 납품 번들(`deliveries/JOB-07_delivery.zip` 및 `deliveries/JOB-07_delivery.json`)을 생성하고 터미널 출력 요약과 함께 납품해 주세요."
+  ]
+}
